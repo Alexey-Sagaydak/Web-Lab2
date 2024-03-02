@@ -1,0 +1,74 @@
+.calculator {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px #0000001a;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; 
+}
+
+.input-section {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+.styled-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: solid 1px #c9c9c9;
+    border-radius: 10px;
+    appearance: none;
+    -webkit-appearance: menulist;
+    background-color: #f0f8ff;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: solid 1px #c9c9c9;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.calculate-button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: solid 1px #c9c9c9;
+    border-radius: 10px;
+    background-color: #00bfff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.calculate-button:hover {
+    background-color: #0080ff;
+}
+
+.result-field {
+    width: 100%;
+    margin-left: 10px;
+    padding: 10px;
+    border: solid 1px #c9c9c9;
+    border-radius: 10px;
+    align-self: center;
+    box-sizing: border-box;
+    resize: none;
+}
+
+swiper-container {
+    width: 50%;
+}
+
+.swiper-slide img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор вкладов</title>
+    <link rel="stylesheet" href="css/calculator-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <script src="js/term-selector.js"></script>
+    <script src="js/calculate-deposit.js"></script>
+
+    <swiper-container class="mySwiper" pagination="true" autoplay="true" pagination-clickable="true" centeredSlides="true" autoplay-delay="1500" freeMode="true" space-between="30" slides-per-view="3" loop="true">
+        <div class="swiper-slide"><img src="img/1.png"></div>
+        <div class="swiper-slide"><img src="img/2.png"></div>
+        <div class="swiper-slide"><img src="img/3.png"></div>
+        <div class="swiper-slide"><img src="img/4.png"></div>
+        <div class="swiper-slide"><img src="img/5.png"></div>
+        <div class="swiper-slide"><img src="img/6.png"></div>
+        <div class="swiper-slide"><img src="img/7.png"></div>
+        <div class="swiper-slide"><img src="img/8.png"></div>
+        <div class="swiper-slide"><img src="img/9.png"></div>
+        <div class="swiper-slide"><img src="img/10.png"></div>
+    </swiper-container>
+    
+    <div class="calculator">
+        <div class="input-section">
+            <select id="deposit-type" class="styled-select">
+                <option value="пополняемый">Пополняемый вклад</option>
+                <option value="срочный">Срочный вклад</option>
+            </select>
+            
+            <select id="term-select" class="styled-select">
+            </select>
+
+            <input type="text" id="amount-input" class="input-field" placeholder="Сумма, руб">
+            <button class="calculate-button" onclick="calculateDeposit()">Рассчитать</button>
+            <textarea class="result-field" id="result-textarea" rows="5" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+</html>
